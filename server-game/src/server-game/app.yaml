@@ -1,0 +1,64 @@
+# Copyright 2016 The Web BSD Hunt Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+################################################################################
+#
+# TODO: High-level file comment.
+runtime: custom
+vm: true
+service: server-game
+
+#network:
+#  instance_tag: server-game-instance
+#  name: private-game
+
+resources:
+  cpu: 1
+  memory_gb: 1
+  disk_size_gb: 10
+
+health_check:
+  enable_health_check: True
+  check_interval_sec: 5
+  timeout_sec: 4
+  unhealthy_threshold: 2
+  healthy_threshold: 2
+  restart_threshold: 60
+
+#automatic_scaling:
+#  min_num_instances: 1
+#  max_num_instances: 20
+#  cool_down_period_sec: 120 # default value
+#  cpu_utilization:
+#    target_utilization: 0.5
+
+manual_scaling:
+  instances: 2
+
+handlers:
+- url: /.*
+  script: IGNORED
+  secure: optional
+#  login: admin          # https://cloud.google.com/docs/permissions-overview#h.ii4i45dsgte4
+
+#
+# SERVER_GAME_URL can contain a special template instruction, "{{instance}}".  If there are multiple
+# game servers, {{instance}} will be replaced with a specific one, or "0" if the frontend doesn't know
+# the ids of any instances.
+#
+env_variables:
+  SERVER_GAME_URL: 'https://{{instance}}-dot-server-game-dot-webhunt-dev.appspot.com/jsonrpc'
+  SERVER_KEEPALIVE_TOPIC: 'keepalive'
+# SERVER_GAME_OPTIONS: 'LOG_STARTUP,LOG_EVENT,LOG_RPC,LOG_HUNTD_CONNECT,LOG_PLAYER_API,LOG_KEEPALIVE'
+  SERVER_GAME_OPTIONS: 'LOG_STARTUP,LOG_EVENT,LOG_HUNTD_CONNECT,LOG_KEEPALIVE'

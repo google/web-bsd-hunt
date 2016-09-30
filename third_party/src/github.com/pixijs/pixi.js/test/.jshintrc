@@ -1,0 +1,13 @@
+{
+  "node": true,
+  "mocha": true,
+  "browser": true,
+  "esversion": 6,
+  "expr": true,
+  "predef": [
+  	"PIXI",
+  	"chai",
+  	"expect",
+    "assert"
+  ]
+}

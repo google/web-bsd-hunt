@@ -1,0 +1,17 @@
+.DS_Store
+.*.swp
+
+third_party/pkg/
+third_party/.cache/
+
+server-game/vendor/
+server-game/src/server-game/vendor/
+
+server-frontend/src/server-frontend/assets/
+server-frontend/src/server-frontend/vendor/
+server-frontend/vendor/
+
+bin/*
+third_party/bin/*
+
+server-game.tag

@@ -1,0 +1,33 @@
+From: Viacheslav Slavinsky
+Date: Mon, 26 Sep 2016 19:32:42 +0300
+Message-ID: <CA+JyEHBNGkZ9r4qkSu2W2ihBn4rK5uoFYnJh_1_DVYu6dtmWkA@mail.gmail.com>
+Subject: Re: VT220 Font license for open source project?
+To: Tad Hunt
+
+Hi Tad!
+
+The font should be treated as public domain I think. I get this question
+asked every now and then and I just say public domain.
+
+My first green glow was of a Soviet clone of VT-52. There's something truly
+magical about those old monochrome CRT screens eh..
+
+Cheers,
+Viacheslav
+
+2016-09-26 9:57 GMT+03:00 Tad Hunt
+
+> Hi Viacheslav,
+>
+> I'd love to use this font in an open source project, but it's not clear
+> what license it's under?
+> Could you clarify for me?
+>
+> Background:
+> I grew up on VT series, ADM-3A, and other similar terminals.  I was also a
+> big BSD Hunt fan (curses based 2d multiplayer client/server maze war game),
+> and I'm in the midst porting it to the web.  I want the play to feel
+> authentic and found your VT220 font via a Stephen Foskett blog post.
+>
+> Regards,
+> -Tad
