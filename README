@@ -29,19 +29,44 @@ covered as architectural components.
 ##Licenses:
 * All Google authored code is covered by the license detailed in the LICENSE
   file at the top of the tree.
-* This repository also contains code covered by other licenses.  
+* This repository also contains code covered by other licenses.
   All such code can be found within the "third_party" directory tree.
 
 ##Installation:
-* Install The Go Programming Language  
-  Download and Installation instructions can be found at https://golang.org
-* Install govendor  
- * Set the GOPATH environment variable to the root of the web-bsd-hunt project.
- * execute the command  
-  `go git -u github.com/kardianos/govendor`
-* Install the App Engine SDK for Go  
-  Instructions are at https://cloud.google.com/appengine/docs/go/download
+###Linux:
+####Prerequisites:
+* Install The Go Programming Language
+    * Installation instructions can be found at https://golang.org
+
+* Install govendor 
+    * Set the GOPATH environment variable to the root of the web-bsd-hunt project.
+    * execute the command:  
+    
+    `go git -u github.com/kardianos/govendor`
+
+* Install docker
+    * Installation instructions can be found at https://docker.github.io/engine/installation/linux/
+
+* Install the App Engine SDK for Go
+    * Installation instructions are at https://cloud.google.com/appengine/docs/go/download
+
+* Install the Google Cloud SDK
+    * Installation instructions are at https://cloud.google.com/sdk/docs/quickstart-linux
  
+####Installation:
+* Using the Google Cloud Platform dashboard, go to the Projects page and
+create a new project.
+    * https://console.cloud.google.com/iam-admin/projects
+    * Make note of the name assigned to the new project
+
+* From the root of the web-bsd-hunt directory, build and deploy the project by executing the command:  
+
+     `make PROJECT=<project-name> deploy`  
+     
+     Where `<project-name>` is the name given to the Google Platform project created in the previous step.
+
+* Once the build and deployment finishes, you can view the application in a web browser using the following URL
+    * https://project-name.appspot.com
 
 ##Notes:
 * This is not an official Google product.
