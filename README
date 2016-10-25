@@ -42,7 +42,7 @@ covered as architectural components.
     * Set the GOPATH environment variable to the root of the web-bsd-hunt project.
     * execute the command:  
     
-    `go git -u github.com/kardianos/govendor`
+    `go get -u github.com/kardianos/govendor`
 
 * Install docker
     * Installation instructions can be found at https://docker.github.io/engine/installation/linux/
