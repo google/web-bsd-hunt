@@ -18,19 +18,19 @@ Javascript Single Page App running in a browser, to the stateless
 serving infrastructure running in the Google App Engine (GAE) Standard
 Environment, a stateful game engine in the GAE Flexible environment.
 Memcache, Datastore, Cloud Pub-Sub, Cron, and Metadata services are
-covered as architectural components.
+utilized as architectural components.
 
-##Highlights:
+##Highlights
 * Client: HTML / Javascript
 * Frontend: Golang application for App Engine Standard
 * Backend: Game engine (Original Hunt daemon & Golang instance manager)
   in App Engine Flex
 
-##Licenses:
+##Licenses
 * All Google authored code is covered by the license detailed in the LICENSE
   file at the top of the tree.
 * This repository also contains code covered by other licenses.  All
   such code can be found within the "third_party" directory tree.
 
-##Notes:
+##Notes
 * This is not an official Google product.
