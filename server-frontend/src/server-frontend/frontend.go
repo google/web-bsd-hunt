@@ -15,7 +15,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //
 // TODO: High-level file comment.
-package main
+package frontend
 
 import(
 	"log"
@@ -675,8 +675,4 @@ func infoHandler(game *gamerpc.GameClient, w http.ResponseWriter, r *http.Reques
 		apputils.InternalServerError(w, r, err.Error(), err)
 		return
 	}
-}
-
-func main() {
-	fmt.Printf("Not reached\n")
 }
