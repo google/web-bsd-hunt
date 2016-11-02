@@ -32,22 +32,22 @@ utilized as architectural components.
 * This repository also contains code covered by other licenses.
   All such code can be found within the "third_party" directory tree.
 
-##Installation:
-###Prerequisites:
+##Installation
+###Prerequisites
 
-* Install The Go Programming Language:  
+* Install The Go Programming Language  
 	Installation instructions can be found at [https://golang.org](https://golang.org "https://golang.org")
 
-* Install docker:  
+* Install docker  
 	Installation instructions can be found at [https://docker.github.io/engine/installation](https://docker.github.io/engine/installation)  
 
-* Install the App Engine SDK for Go:  
+* Install the App Engine SDK for Go  
 	Installation instructions can be found at [https://cloud.google.com/appengine/docs/go/download](https://cloud.google.com/appengine/docs/go/download)
 
-* Install the Google Cloud SDK:  
+* Install the Google Cloud SDK  
 	Installation instructions can be found at [https://cloud.google.com/sdk/docs/quickstarts](https://cloud.google.com/sdk/docs/quickstarts)
  
-###Build and Deploy:
+###Build and Deploy
 * Using the Google Cloud Platform dashboard, go to the Projects page and
 create a new project.  
 [https://console.cloud.google.com/iam-admin/projects](https://console.cloud.google.com/iam-admin/projects)  
