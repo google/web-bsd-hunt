@@ -2,7 +2,7 @@
 Port of the real-time multiplayer 2D maze war BSD game "Hunt" to Google
 App Engine and modern web browsers.
 
-https://en.wikipedia.org/wiki/Hunt_(video_game)
+[https://en.wikipedia.org/wiki/Hunt_(video_game)](https://en.wikipedia.org/wiki/Hunt_(video_game))
 
 Moderately complex multiplayer real-time web and mobile games require
 a mix of stateless and stateful components to deal with managing game
@@ -39,7 +39,7 @@ utilized as architectural components.
 	Installation instructions can be found at [https://golang.org](https://golang.org "https://golang.org")
 
 * Install docker  
-	Installation instructions can be found at [https://docker.github.io/engine/installation](https://docker.github.io/engine/installation)  
+	Installation instructions can be found at [https://docker.github.io/engine/installation](https://docker.github.io/engine/installation)
 
 * Install the App Engine SDK for Go  
 	Installation instructions can be found at [https://cloud.google.com/appengine/docs/go/download](https://cloud.google.com/appengine/docs/go/download)
@@ -51,16 +51,16 @@ utilized as architectural components.
 * Using the Google Cloud Platform dashboard, go to the Projects page and
 create a new project.  
 [https://console.cloud.google.com/iam-admin/projects](https://console.cloud.google.com/iam-admin/projects)  
-Make note of the name assigned to the new project
+Make note of the name assigned to the new project.
 
-* From the root of the web-bsd-hunt directory, build and deploy the project by executing the command:  
+* From the root of the web-bsd-hunt directory, build and deploy the project by executing the command:
 
      `make PROJECT=<project-name> build deploy`  
      
      Where `<project-name>` is the name given to the Google Platform project created in the previous step.
 
-* Once the build and deployment finishes, you can view the application in a web browser using the following URL
-    * https://`<project-name>`.appspot.com
+* Once the build and deployment finishes, you can view the application in a web browser using the following URL:  
+ https://`<project-name>`.appspot.com
 
 ##Notes
 * This is not an official Google product.
