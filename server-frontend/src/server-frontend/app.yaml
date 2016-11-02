@@ -34,6 +34,10 @@ handlers:
   static_files: client/hunt.html
   upload: client/hunt.html
 
+- url: /style.css
+  static_files: client/style.css
+  upload: client/style.css
+
 - url: /api/v1/.*
   script: _go_app
 
