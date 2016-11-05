@@ -1,0 +1,40 @@
+.VT220 {
+    font-family: 'Glass TTY VT220';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.game-play {
+    float: left;
+}
+
+.game-help {
+    color: #FCFB78;
+    margin-left: 5px;
+}
+
+.game-log {
+    margin-top: 10px;
+    padding-top: 10px;
+    color: #FF0000;
+}
+
+.game-chat {
+    margin-top: 10px;
+    padding-top: 10px;
+    color: #FCFB78;
+}
+
+body {
+    background: #000000;
+    color: #FCFB78;
+}
+
+th {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.center {
+    text-align: center;
+}
