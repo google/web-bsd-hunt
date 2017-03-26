@@ -108,6 +108,8 @@ deploy-server-frontend: build-server-frontend
 
 .PHONY: build-server-game
 build-server-game: export GOPATH=${GAME_GOPATH}:${GAME_GOPATH}/vendor
+build-server-game: export GOOS=linux
+build-server-game: export GOARCH=amd64
 build-server-game: install-deps-server-game
 	rm -f ${GOBIN}/server-game
 	cd ${GAME_DIR} && go build -o ${GOBIN}/server-game
@@ -152,7 +154,7 @@ build-server-game-image: build-server-game server-game.tag
 .PHONY: push-server-game
 push-server-game: tag=$(shell cat server-game.tag)
 push-server-game: build-server-game-image
-	gcloud docker push ${tag}
+	gcloud docker -- push ${tag}
 
 .PHONY: deploy-server-game
 deploy-server-game: tag=$(shell cat server-game.tag)
