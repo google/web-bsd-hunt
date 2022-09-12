@@ -1,4 +1,4 @@
-#Web Hunt
+# Web Hunt
 Port of the real-time multiplayer 2D maze war BSD game "Hunt" to Google
 App Engine and modern web browsers.
 
@@ -20,20 +20,20 @@ Environment, a stateful game engine in the GAE Flexible environment.
 Memcache, Datastore, Cloud Pub-Sub, Cron, and Metadata services are
 utilized as architectural components.
 
-##Highlights
+## Highlights
 * Client: HTML / Javascript
 * Frontend: Golang application for App Engine Standard
 * Backend: Game engine (Original Hunt daemon & Golang instance manager)
   in App Engine Flex
 
-##Licenses
+## Licenses
 * All Google authored code is covered by the license detailed in the LICENSE
   file at the top of the tree.
 * This repository also contains code covered by other licenses.
   All such code can be found within the "third_party" directory tree.
 
-##Installation
-###Prerequisites
+## Installation
+### Prerequisites
 
 * Install The Go Programming Language  
 	Installation instructions can be found at [https://golang.org](https://golang.org "https://golang.org")
@@ -47,7 +47,7 @@ utilized as architectural components.
 * Install the Google Cloud SDK  
 	Installation instructions can be found at [https://cloud.google.com/sdk/docs/quickstarts](https://cloud.google.com/sdk/docs/quickstarts)
  
-###Build and Deploy
+### Build and Deploy
 * Using the Google Cloud Platform dashboard, go to the Projects page and
 create a new project.  
 [https://console.cloud.google.com/iam-admin/projects](https://console.cloud.google.com/iam-admin/projects)  
@@ -62,5 +62,5 @@ Make note of the name assigned to the new project.
 * Once the build and deployment finishes, you can view the application in a web browser using the following URL:  
  https://`<project-name>`.appspot.com
 
-##Notes
+## Notes
 * This is not an official Google product.
